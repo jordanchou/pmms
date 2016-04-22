@@ -4,3 +4,6 @@ EXEC = pmms
 
 $(EXEC) : $(OBJ)
 	gcc $(CFLAGS) pmms.c -o $(EXEC)
+
+clean :
+	rm pmms
