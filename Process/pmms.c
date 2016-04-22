@@ -214,18 +214,21 @@ void child_handler(int num, int M, int N, int K, int (*matrix_one)[M][N],
                    int (*matrix_two)[N][K], int (*matrix_three)[M][K], sem_t *semaphores,
                    SubTotal *sub_total)
 {
-    int total;
+    int total, subtotal;
     num--;
 
     total = 0;
+    subtotal = 0;
 
     //calc matrix C line
     for (int ii = 0; ii<K; ii++)
     {
-        (*matrix_three)[num][ii] =
-                                (*matrix_one)[num][0] * (*matrix_two)[0][ii]
-                                +
-                                (*matrix_one)[num][1] * (*matrix_two)[1][ii];
+        for (int jj = 0; ii<K; ii++)
+        {
+            subtotal = subtotal + (*matrix_one)[num][jj] * (*matrix_two)[ii];
+        }
+
+        (*matrix_three)[num][ii] = subtotal;
     }
 
     //SHOULD BE LOOPING HERE TO CALCULATE THE TOTAL
