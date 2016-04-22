@@ -86,10 +86,10 @@ void *child_handler(void *args)
 
         for (int jj = 0; jj<N; jj++)
         {
-            subtotal = subtotal + (*matrix_one)[num][jj] * (*matrix_two)[jj][ii];
+            subtotal = subtotal + (*matrix_a)[num][jj] * (*matrix_b)[jj][ii];
         }
 
-        (*matrix_three)[num][ii] = subtotal;
+        (*matrix_c)[num][ii] = subtotal;
     }
     for (int ii = 0; ii< K; ii++)
     {
