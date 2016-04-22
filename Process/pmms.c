@@ -223,9 +223,9 @@ void child_handler(int num, int M, int N, int K, int (*matrix_one)[M][N],
     //calc matrix C line
     for (int ii = 0; ii<K; ii++)
     {
-        for (int jj = 0; ii<K; ii++)
+        for (int jj = 0; ii<N; ii++)
         {
-            subtotal = subtotal + (*matrix_one)[num][jj] * (*matrix_two)[jj][ii];
+            subtotal = subtotal + (*matrix_one)[num][jj] * (*matrix_two)[jj][num];
         }
 
         (*matrix_three)[num][ii] = subtotal;
