@@ -225,7 +225,7 @@ void child_handler(int num, int M, int N, int K, int (*matrix_one)[M][N],
     {
         subtotal = 0;
 
-        for (int jj = 0; ii<N; jj++)
+        for (int jj = 0; jj<N; jj++)
         {
             subtotal = subtotal + (*matrix_one)[num][jj] * (*matrix_two)[jj][ii];
         }
