@@ -74,20 +74,23 @@ int main(int argc, char **argv)
  */
 void *child_handler(void *args)
 {
-	int total, num;
+	int total, subtotal, num;
 
 	num = *((int*)args);//extract the row number from the void pointer
 
 	total = 0;//Initialise total to 0
 
-    for (int ii = 0; ii<K; ii++)//WHY M+1
+    for (int ii = 0; ii<K; ii++)
     {
-        matrix_c[num][ii] =
-                                matrix_a[num][0] * matrix_b[0][ii]
-                                +
-                                matrix_a[num][1] * matrix_b[1][ii];
-	}
+        subtotal = 0;
 
+        for (int jj = 0; jj<N; jj++)
+        {
+            subtotal = subtotal + (*matrix_one)[num][jj] * (*matrix_two)[jj][ii];
+        }
+
+        (*matrix_three)[num][ii] = subtotal;
+    }
     for (int ii = 0; ii< K; ii++)
     {
         total = total + matrix_c[num][ii];
