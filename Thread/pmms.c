@@ -87,7 +87,8 @@ void *child_handler(void *args)
         for (int jj = 0; jj<N; jj++)
         {
 
-printf("SUBTOTAL: %d\n", sum);
+printf("Matrix A: %d\n", (matrix_a)[num][jj]);
+printf("Matrix B: %d\n", (matrix_b)[jj][ii]);
             sum = sum + (matrix_a)[num][jj] * (matrix_b)[jj][ii];
         }
 
