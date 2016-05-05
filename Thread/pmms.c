@@ -32,9 +32,9 @@ int main(int argc, char **argv)
 	N = atoi(argv[4]);//Get the number of rows of matrix b
 	K = atoi(argv[5]);//Get the number of columns of matrix b
 
-	matrix_a = initialise_array(M, N);//Initialise and allocate memory for
-	matrix_b = initialise_array(N, K);// all the matrices
-	matrix_c = initialise_array(M, K);
+	initialise_array(matrix_a, M, N);//Initialise and allocate memory for
+	initialise_array(matrix_b, N, K);// all the matrices
+	initialise_array(matrix_c, M, K);
 
 	thread_args = initialise_array(M, 1);//Initialise and allocate memory for
                                         // argument array
@@ -187,23 +187,19 @@ void free_array(int rows, int cols, int **matrix)
 }
 
 /**
- * Allocates memory for an array given its dimensions
- * @param  rows the number of rows for the array
- * @param  cols the number of columns for the array
- * @return      a pointer pointing to the memory for the array
+ * [initialise_array description]
+ * @param matrix [description]
+ * @param rows   [description]
+ * @param cols   [description]
  */
-int **initialise_array(int rows, int cols)
+void initialise_array(int** matrix, int rows, int cols)
 {
-	int **matrix;
-
 	matrix = malloc(rows * sizeof(int*));
 
 	for (int ii=0; ii< rows; ii++)//allocate memory for each row
 	{
 		matrix[ii] = malloc(cols * sizeof(int));
 	}
-
-	return matrix;
 }
 
 /**
