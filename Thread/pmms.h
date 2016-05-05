@@ -40,7 +40,7 @@ void *child_handler(void *args);
 void parent_handler();
 void cleanup();
 void free_array(int rows, int cols, int **matrix);
-void initialise_array(int** matrix, int rows, int cols);
+void initialise_array(int*** matrix, int rows, int cols);
 void read_matrix(char* filename, int rows, int cols, int **matrix);
 void check_usage(int argc, char** argv);
 
