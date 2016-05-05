@@ -218,7 +218,6 @@ void child_handler(int num, int M, int N, int K, int (*matrix_one)[M][N],
     num--;
 
     total = 0;
-    subtotal = 0;
 
     //calc matrix C line
     for (int ii = 0; ii<K; ii++)
