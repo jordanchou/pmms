@@ -36,7 +36,7 @@ int main(int argc, char **argv)
 	initialise_array(matrix_b, N, K);// all the matrices
 	initialise_array(matrix_c, M, K);
 
-	thread_args = initialise_array(M, 1);//Initialise and allocate memory for
+	initialise_array(thread_args, M, 1);//Initialise and allocate memory for
                                         // argument array
 
 	read_matrix(argv[1], M, N, matrix_a);//Read in matrix a
