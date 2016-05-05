@@ -74,7 +74,7 @@ int main(int argc, char **argv)
  */
 void *child_handler(void *args)
 {
-	int total, subtotal, num;
+	int total, sum, num;
 
 	num = *((int*)args);//extract the row number from the void pointer
 
@@ -82,16 +82,16 @@ void *child_handler(void *args)
 
     for (int ii = 0; ii<K; ii++)
     {
-        subtotal = 0;
+        sum = 0;
 
         for (int jj = 0; jj<N; jj++)
         {
 
-printf("SUBTOTAL: %d\n", subtotal);
-            subtotal = subtotal + (matrix_a)[num][jj] * (matrix_b)[jj][ii];
+printf("SUBTOTAL: %d\n", sum);
+            sum = sum + (matrix_a)[num][jj] * (matrix_b)[jj][ii];
         }
 
-        (matrix_c)[num][ii] = subtotal;
+        (matrix_c)[num][ii] = sum;
     }
     for (int ii = 0; ii< K; ii++)
     {
