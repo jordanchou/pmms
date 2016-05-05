@@ -232,7 +232,7 @@ void read_matrix(char* filename, int rows, int cols, int **matrix)
         for (int jj=0; jj<cols; jj++)//Loop through the rows
         {
             //Read the number from file
-            if (fscanf(in_file, "%d", &(matrix)[ii][jj]) != 1)
+            if (fscanf(in_file, "%d", (matrix)[ii][jj]) != 1)
             {
                 fprintf(stderr, "Error reading from file: %s\n", filename);
                 fclose(in_file);
