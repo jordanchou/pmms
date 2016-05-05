@@ -192,7 +192,7 @@ void free_array(int rows, int cols, int **matrix)
  * @param rows   [description]
  * @param cols   [description]
  */
-void initialise_array(int** matrix, int rows, int cols)
+void initialise_array(int **matrix, int rows, int cols)
 {
 	matrix = malloc(rows * sizeof(int*));
 
