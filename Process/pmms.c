@@ -372,6 +372,8 @@ void read_matrix(char* filename, int rows, int cols, int (*matrix)[rows][cols])
                 fclose(in_file);
                 exit(1);//If any occurs then end the program
             }
+
+printf("READ IN:%d\n", *(matrix))[ii][jj]);
         }
     }
     fclose(in_file);//Close the file after reading
