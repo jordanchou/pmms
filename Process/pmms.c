@@ -228,7 +228,7 @@ void child_handler(int num, int M, int N, int K, int (*matrix_one)[M][N],
         {
             subtotal = subtotal + (*matrix_one)[num][jj] * (*matrix_two)[jj][ii];
         }
-
+printf("SUBTOTAL AT THIS POINT:%d\n", subtotal);
         (*matrix_three)[num][ii] = subtotal;
     }
 
