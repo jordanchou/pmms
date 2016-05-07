@@ -7,7 +7,7 @@ PURPOSE: Multiplies 2 matrices and outputs the sum
 REFERENCE:-
 COMMENTS:-
 REQUIRES:-
-Last Mod:19-04-2016
+Last Mod: 06-05-2016
 */
 
 #include "pmms.h"
@@ -215,7 +215,7 @@ void read_matrix(char* filename, int rows, int cols, int **matrix)
 
     if (in_file == NULL)//If the file cannot be opened
     {
-        fprintf(stderr, "Could not open file: %s\n", filename);
+        fprintf(stderr, "Could not open file: \"%s\", does it exist?\n", filename);
 
         exit(1);//End the program
     }
@@ -227,7 +227,8 @@ void read_matrix(char* filename, int rows, int cols, int **matrix)
             //Read the number from file
             if (fscanf(in_file, "%d", &(matrix)[ii][jj]) != 1)
             {
-                fprintf(stderr, "Error reading from file: %s\n", filename);
+                fprintf(stderr, "Error reading from file: \"%s\", please check
+                                the format of the file\n", filename);
                 fclose(in_file);
                 exit(1);//If any occurs then end the program
             }
