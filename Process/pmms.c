@@ -52,7 +52,8 @@ int main(int argc, char** argv)
     if ((sem_init(&sem_mutex, 1, 1)== -1) || (sem_init(&sem_full, 1, 0) == -1) ||
     (sem_init(&sem_empty, 1, 1) == -1))
     {
-        printf(stderr, "Could not initialise semaphores\n");
+        fprintf(stderr, "Could not initialise semaphores\n");
+        exit(1);
     }
 
     //Put semaphores in array (which is in memory block)
