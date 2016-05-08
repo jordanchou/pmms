@@ -185,12 +185,14 @@ INPUT ./process_meXmf.png
 INPUT thread_meXmf.png
 INPUT ./thread_meXmf.png
 INPUT ./thread_meXmf.png
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT Report.bbl
 INPUT Report.bbl
 INPUT Report.aux
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb

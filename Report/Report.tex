@@ -229,8 +229,45 @@ Thread:
 \end{figure}
 
 \section{ReadMe}
+\textbf{Purpose}\\
+Matrix multiplication program using multiple processes and multiple threads
+written in C99.
+\\\\
+The program prints out the subtotal calculated for each row along with the ID
+of the thread/process that computed it. The total is then printed out after
+all the rows have been calculated.
+\\\\\\
+\textbf{Files Included}
+\begin{verbatim}
+Process
+    makefile
+    pmms.c
+    pmms.h
 
+Thread
+    makefile
+    pmms.c
+    pmms.h
 
+Other
+    test files
+\end{verbatim}
+\\\\\\
+\textbf{Compile}
+\begin{verbatim}
+    make
+\end{verbatim}
+\\\\\\
+\textbf{Execution}
+\begin{verbatim}
+    ./pmms matrix_one matrix_two M N K
+\end{verbatim}
+\\
+matrix\_one = first matrix file\\
+matrix\_two = second matrix file\\
+M = matrix one columns\\
+N = matrix one rows/matrix two cols\\
+K = matrix two rows\\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Finally we specify the format required for our references and the
