@@ -7,13 +7,12 @@ PURPOSE: Multiplies 2 matrices and outputs the sum
 REFERENCE:-
 COMMENTS:-
 REQUIRES:-
-Last Mod:19-04-2016
+Last Mod:08-05-2016
 */
 
 #include "pmms.h"
 
 /**
- * [main description]
  * @param  argc The number of command line arguments
  * @param  argv The command line arguments
  * @return      Exit condition
@@ -50,7 +49,7 @@ int main(int argc, char** argv)
 
     //Initialise semaphores
     if ((sem_init(&sem_mutex, 1, 1)== -1) || (sem_init(&sem_full, 1, 0) == -1) ||
-    (sem_init(&sem_empty, 1, 1) == -1))
+        (sem_init(&sem_empty, 1, 1) == -1))
     {
         fprintf(stderr, "Could not initialise semaphores\n");
         exit(1);
@@ -62,7 +61,7 @@ int main(int argc, char** argv)
     semaphores[2] = sem_empty;
 
     //Create child processes
-    process_num = 0;
+    process_num = -1;//First process will be 0
     pid = -1;
 
     //Creat M children
@@ -76,7 +75,8 @@ int main(int argc, char** argv)
 
     if (pid == 0)//Successful child process creation
     {
-        child_handler(process_num, M, N, K, matrix_one, matrix_two, matrix_three, semaphores, sub_total);
+        child_handler(process_num, M, N, K, matrix_one, matrix_two,
+                        matrix_three, semaphores, sub_total);
     }
     else if (pid > 0)//Parent process
     {
@@ -91,7 +91,7 @@ int main(int argc, char** argv)
     {
         //Clean up child creation failure
         fprintf(stderr, "Unable to create child: please run \"killall pmms\"\n");
-        exit(1);
+        exit(1);//Exit program
     }
 
     return 0;
@@ -219,7 +219,6 @@ void child_handler(int num, int M, int N, int K, int (*matrix_one)[M][N],
                    SubTotal *sub_total)
 {
     int total, subtotal;
-    num--;
 
     total = 0;
 

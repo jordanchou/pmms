@@ -47,12 +47,12 @@
 \begin{document}
 
 \author{Jordan Pinglin Chou\\
-  18348691\\
-  Operating Systems COMP2006\\}
+  18348691\\\\
+  Operating Systems COMP2006 Assignment\\}
 \date{\today}
-\title{PMMS Assignment}
+\title{PMMS}
 \maketitle
-
+\pagebreak
 \begin{abstract}
   The purpose of this short document is to provide a brief overview of
   how mutual exclusion was achieved in the multi-process as well as
@@ -93,9 +93,15 @@ declared as global were the required semaphores, subtotal and matrices.
 \section{Testing}
 
 \subsection{Method}
-
+Testing was done using various size matrices from the 3x2x4 (given to us in the
+assignment specification) to 850x10x850 (for obvious reasons that matrix is not
+included in this report). By doing a range of test inputs I was able to see
+whether the process-pmms and thread-pmms deadlocked and whether they scaled well
+to large calculations.
 \subsection{Known Issues}
-
+There are no known issues. However, memory leaks or other memory related issues
+could occur in the event that shared memory fails to be opened/mapped. I have
+tried my best to handle these errors but some could still leak through.
 \subsection{Input Files}
         \hangindent
 
@@ -109,7 +115,7 @@ declared as global were the required semaphores, subtotal and matrices.
                     1 & 2 & 3 & 4\\
                     5 & 6 & 7 & 8
                     \end{bmatrix}
-
+\\\\\\
         matrix\_E = \begin{bmatrix}
         61 & 78    & 80 & 70 &49 &37&84 &   60 &   31 &   100\\
         85  &  3  &  9 &   53  &  20  &  96 &   36  &  36 &   50   & 64\\
@@ -123,7 +129,6 @@ declared as global were the required semaphores, subtotal and matrices.
         47  &  18 &   18  &  83  &  16 &   24  &  53  &  19 &   57 &   38\\
                     \end{bmatrix}
 \\\\\\
-
         matrix\_F = \begin{bmatrix}
         88  &  97   & 80 &   53   & 40  &  40  &  100   & 13  &  8  &  37\\
         31  &  79   & 40  & 2  &  10 &   42 &   48 &   32   & 7   & 30\\
