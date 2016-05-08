@@ -61,7 +61,7 @@ int main(int argc, char** argv)
     semaphores[2] = sem_empty;
 
     //Create child processes
-    process_num = -1;//First process will be 0
+    process_num = 0;
     pid = -1;
 
     //Creat M children
