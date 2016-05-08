@@ -1,9 +1,9 @@
-PWD /Users/jordanchou/Google Drive/2016SEM1/Operating Systems/pmms
+PWD /Users/jordanchou/Google Drive/2016SEM1/Operating Systems/pmms/Report
 INPUT /usr/local/texlive/2015/texmf.cnf
 INPUT /usr/local/texlive/2015/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2015/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT report.tex
-OUTPUT report.log
+INPUT Report.tex
+OUTPUT Report.log
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/size10.clo
@@ -66,9 +66,9 @@ INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1enc.def
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1enc.def
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/tools/xspace.sty
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/tools/xspace.sty
-INPUT report.aux
-INPUT report.aux
-OUTPUT report.aux
+INPUT Report.aux
+INPUT Report.aux
+OUTPUT Report.aux
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ptm.fd
@@ -144,7 +144,7 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
-OUTPUT report.pdf
+OUTPUT Report.pdf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT /usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map
@@ -165,6 +165,12 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/adobe/times/zptmcm7t.vf
+INPUT process_maXmb.png
+INPUT ./process_maXmb.png
+INPUT ./process_maXmb.png
+INPUT thread_maXmb.png
+INPUT ./thread_maXmb.png
+INPUT ./thread_maXmb.png
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/adobe/times/ptmri7t.vf
@@ -173,10 +179,15 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/adobe/times/zptmcm7y.vf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/adobe/times/zptmcm7m.vf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/psyro.tfm
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
-INPUT report.aux
+INPUT process_meXmf.png
+INPUT ./process_meXmf.png
+INPUT ./process_meXmf.png
+INPUT thread_meXmf.png
+INPUT ./thread_meXmf.png
+INPUT ./thread_meXmf.png
+INPUT Report.bbl
+INPUT Report.bbl
+INPUT Report.aux
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb

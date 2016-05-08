@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.4.23)  8 MAY 2016 10:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.4.23)  8 MAY 2016 13:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**report.tex
-(./report.tex
+**Report.tex
+(./Report.tex
 LaTeX2e <2016/03/31>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
@@ -302,8 +302,18 @@ Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
-) (./report.aux)
-\openout1 = `report.aux'.
+) (./Report.aux
+
+LaTeX Warning: Label `fig:example' multiply defined.
+
+
+LaTeX Warning: Label `fig:example' multiply defined.
+
+
+LaTeX Warning: Label `fig:example' multiply defined.
+
+)
+\openout1 = `Report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
 LaTeX Font Info:    ... okay on input line 54.
@@ -319,8 +329,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
 LaTeX Font Info:    ... okay on input line 54.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 54.
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 54.
@@ -451,7 +460,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--99
 
  []
 
-./report.tex:108: Missing number, treated as zero.
+./Report.tex:108: Missing number, treated as zero.
 <to be read again> 
                    \par 
 l.108 
@@ -460,7 +469,7 @@ A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-./report.tex:108: Illegal unit of measure (pt inserted).
+./Report.tex:108: Illegal unit of measure (pt inserted).
 <to be read again> 
                    \par 
 l.108 
@@ -472,7 +481,7 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-./report.tex:109: Missing $ inserted.
+./Report.tex:109: Missing $ inserted.
 <inserted text> 
                 $
 l.109         matrix\_a = \begin{bmatrix}
@@ -486,7 +495,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 109.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 109.
-./report.tex:113: Missing $ inserted.
+./Report.tex:113: Missing $ inserted.
 <inserted text> 
                 $
 l.113         \end{bmatrix}
@@ -497,7 +506,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./report.tex:115: Missing $ inserted.
+./Report.tex:115: Missing $ inserted.
 <inserted text> 
                 $
 l.115         matrix\_b = \begin{bmatrix}
@@ -505,7 +514,7 @@ l.115         matrix\_b = \begin{bmatrix}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./report.tex:118: Missing $ inserted.
+./Report.tex:118: Missing $ inserted.
 <inserted text> 
                 $
 l.118                     \end{bmatrix}
@@ -526,7 +535,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 109--119
 
  []
 
-./report.tex:120: Missing $ inserted.
+./Report.tex:120: Missing $ inserted.
 <inserted text> 
                 $
 l.120         matrix\_E = \begin{bmatrix}
@@ -534,7 +543,7 @@ l.120         matrix\_E = \begin{bmatrix}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./report.tex:131: Missing $ inserted.
+./Report.tex:131: Missing $ inserted.
 <inserted text> 
                 $
 l.131                     \end{bmatrix}
@@ -563,7 +572,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 120--133
 [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-./report.tex:134: Missing $ inserted.
+./Report.tex:134: Missing $ inserted.
 <inserted text> 
                 $
 l.134         matrix\_F = \begin{bmatrix}
@@ -571,7 +580,7 @@ l.134         matrix\_F = \begin{bmatrix}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./report.tex:145: Missing $ inserted.
+./Report.tex:145: Missing $ inserted.
 <inserted text> 
                 $
 l.145                     \end{bmatrix}
@@ -582,7 +591,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./report.tex:149: Missing $ inserted.
+./Report.tex:149: Missing $ inserted.
 <inserted text> 
                 $
 l.149 ...ubsection{\it matrix\_a \times matrix\_b}
@@ -590,7 +599,7 @@ l.149 ...ubsection{\it matrix\_a \times matrix\_b}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./report.tex:149: Missing $ inserted.
+./Report.tex:149: Missing $ inserted.
 <inserted text> 
                 $
 l.149 ...ubsection{\it matrix\_a \times matrix\_b}
@@ -598,7 +607,7 @@ l.149 ...ubsection{\it matrix\_a \times matrix\_b}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./report.tex:150: Missing $ inserted.
+./Report.tex:150: Missing $ inserted.
 <inserted text> 
                 $
 l.150 expected result = \begin{bmatrix}
@@ -606,7 +615,7 @@ l.150 expected result = \begin{bmatrix}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./report.tex:154: Missing $ inserted.
+./Report.tex:154: Missing $ inserted.
 <inserted text> 
                 $
 l.154                     \end{bmatrix}
@@ -617,7 +626,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./report.tex:156: Missing $ inserted.
+./Report.tex:156: Missing $ inserted.
 <inserted text> 
                 $
 l.156 expected subtotals = \begin{bmatrix}
@@ -625,7 +634,7 @@ l.156 expected subtotals = \begin{bmatrix}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./report.tex:160: Missing $ inserted.
+./Report.tex:160: Missing $ inserted.
 <inserted text> 
                 $
 l.160                     \end{bmatrix}
@@ -636,93 +645,144 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
+<process_maXmb.png, id=9, 489.83pt x 93.34875pt>
+File: process_maXmb.png Graphic file (type png)
+ <use process_maXmb.png>
+Package pdftex.def Info: process_maXmb.png used on input line 168.
+(pdftex.def)             Requested size: 284.52756pt x 54.22491pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--163
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 150--163
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 150--163
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 150--163
-
- []
-
-./report.tex:164: Missing $ inserted.
+./Report.tex:170: Missing $ inserted.
 <inserted text> 
                 $
-l.164 ...ubsection{\it matrix\_E \times matrix\_F}
+l.170     matrix_a and matrix_b.}
+                                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Report.tex:170: Extra }, or forgotten $.
+\sbox ...hbox {\color@setgroup #2\color@endgroup }
+                                                  
+l.170     matrix_a and matrix_b.}
+                                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./Report.tex:170: Missing $ inserted.
+<inserted text> 
+                $
+l.170     matrix_a and matrix_b.}
+                                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Report.tex:170: Missing } inserted.
+<inserted text> 
+                }
+l.170     matrix_a and matrix_b.}
+                                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+<thread_maXmb.png, id=11, 474.77374pt x 86.3225pt>
+File: thread_maXmb.png Graphic file (type png)
+ <use thread_maXmb.png>
+Package pdftex.def Info: thread_maXmb.png used on input line 176.
+(pdftex.def)             Requested size: 284.52756pt x 51.7346pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--182
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--182
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--182
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--182
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--182
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--182
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--182
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--182
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--182
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--182
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--182
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--182
+
+ []
+
+[2 <./process_maXmb.png> <./thread_maXmb.png>]
+./Report.tex:182: Missing $ inserted.
+<inserted text> 
+                $
+l.182 ...ubsection{\it matrix\_E \times matrix\_F}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./report.tex:164: Missing $ inserted.
+./Report.tex:182: Missing $ inserted.
 <inserted text> 
                 $
-l.164 ...ubsection{\it matrix\_E \times matrix\_F}
+l.182 ...ubsection{\it matrix\_E \times matrix\_F}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-
-./report.tex:165: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.165 \\\\
-          \\
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./report.tex:165: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.165 \\\\\\
-            
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./report.tex:166: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.166 e
-       xpected result = \begin{bmatrix}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-./report.tex:166: Missing $ inserted.
+./Report.tex:183: Missing $ inserted.
 <inserted text> 
                 $
-l.166 expected result = \begin{bmatrix}
+l.183 expected result = \begin{bmatrix}
                                        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./report.tex:177: Missing $ inserted.
+./Report.tex:194: Missing $ inserted.
 <inserted text> 
                 $
-l.177 \end{bmatrix}
+l.194 \end{bmatrix}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -730,19 +790,107 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./report.tex:179: Missing $ inserted.
+./Report.tex:196: Missing $ inserted.
 <inserted text> 
                 $
-l.179 expected subtotals = \begin{bmatrix}
+l.196 expected subtotals = \begin{bmatrix}
                                           
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./report.tex:190: Missing $ inserted.
+./Report.tex:207: Missing $ inserted.
 <inserted text> 
                 $
-l.190 \end{bmatrix}
-                   
+l.207                     \end{bmatrix}
+                                       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+<process_meXmf.png, id=19, 515.9275pt x 202.7575pt>
+File: process_meXmf.png Graphic file (type png)
+ <use process_meXmf.png>
+Package pdftex.def Info: process_meXmf.png used on input line 216.
+(pdftex.def)             Requested size: 284.52756pt x 111.82016pt.
+
+./Report.tex:218: Missing $ inserted.
+<inserted text> 
+                $
+l.218             matrix_E and matrix_F.}
+                                         
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Report.tex:218: Extra }, or forgotten $.
+\sbox ...hbox {\color@setgroup #2\color@endgroup }
+                                                  
+l.218             matrix_E and matrix_F.}
+                                         
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./Report.tex:218: Missing $ inserted.
+<inserted text> 
+                $
+l.218             matrix_E and matrix_F.}
+                                         
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Report.tex:218: Missing } inserted.
+<inserted text> 
+                }
+l.218             matrix_E and matrix_F.}
+                                         
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+<thread_meXmf.png, id=20, 512.91624pt x 213.79875pt>
+File: thread_meXmf.png Graphic file (type png)
+ <use thread_meXmf.png>
+Package pdftex.def Info: thread_meXmf.png used on input line 225.
+(pdftex.def)             Requested size: 284.52756pt x 118.60098pt.
+
+./Report.tex:227: Missing $ inserted.
+<inserted text> 
+                $
+l.227             matrix_E and matrix_F.}
+                                         
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Report.tex:227: Extra }, or forgotten $.
+\sbox ...hbox {\color@setgroup #2\color@endgroup }
+                                                  
+l.227             matrix_E and matrix_F.}
+                                         
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./Report.tex:227: Missing $ inserted.
+<inserted text> 
+                $
+l.227             matrix_E and matrix_F.}
+                                         
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Report.tex:227: Missing } inserted.
+<inserted text> 
+                }
+l.227             matrix_E and matrix_F.}
+                                         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -750,55 +898,63 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 166--193
+Underfull \hbox (badness 10000) in paragraph at lines 183--230
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 166--193
+Underfull \hbox (badness 10000) in paragraph at lines 183--230
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 166--193
+Underfull \hbox (badness 10000) in paragraph at lines 183--230
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 166--193
+Underfull \hbox (badness 10000) in paragraph at lines 183--230
 
  []
 
-[2]
 
-./report.tex:213: LaTeX Error: File `sigmoid' not found.
+Underfull \hbox (badness 10000) in paragraph at lines 183--230
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.213   \includegraphics[width=6cm]{sigmoid}
-                                            
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+ []
 
-No file report.bbl.
-[3] (./report.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--230
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--230
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--230
+
+ []
+
+(./Report.bbl) [3 <./process_meXmf.png> <./thread_meXmf.png>] [4] (./Report.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 5347 strings out of 493027
- 77229 string characters out of 6134069
- 166786 words of memory out of 5000000
- 8786 multiletter control sequences out of 15000+600000
- 35833 words of font info for 72 fonts, out of 8000000 for 9000
+ 5353 strings out of 493027
+ 77561 string characters out of 6134069
+ 160817 words of memory out of 5000000
+ 8800 multiletter control sequences out of 15000+600000
+ 34248 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,8n,35p,294b,223s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,8n,35p,281b,233s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report.pdf (3 pages, 56091 bytes).
+Output written on Report.pdf (4 pages, 92274 bytes).
 PDF statistics:
- 35 PDF objects out of 1000 (max. 8388607)
- 24 compressed objects within 1 object stream
+ 47 PDF objects out of 1000 (max. 8388607)
+ 27 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
