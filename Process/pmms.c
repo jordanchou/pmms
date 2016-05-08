@@ -49,9 +49,11 @@ int main(int argc, char** argv)
     read_matrix(argv[2], N, K, matrix_two);//Read in second matrix
 
     //Initialise semaphores
-    sem_init(&sem_mutex, 1, 1);
-    sem_init(&sem_full, 1, 0);
-    sem_init(&sem_empty, 1, 1);
+    if ((sem_init(&sem_mutex, 1, 1)== -1) || (sem_init(&sem_full, 1, 0) == -1) ||
+    (sem_init(&sem_empty, 1, 1) == -1))
+    {
+        printf(stderr, "Could not initialise semaphores\n");
+    }
 
     //Put semaphores in array (which is in memory block)
     semaphores[0] = sem_mutex;
