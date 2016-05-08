@@ -68,6 +68,7 @@ int main(int argc, char** argv)
     //Creat M children
     while (process_num < M && pid != 0)
     {
+        signal(SIGCHLD, SIG_IGN);//Clean up any zombies
         pid = fork();//Create child
         process_num++;//Incrememnt child number
     }
