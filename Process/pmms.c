@@ -219,7 +219,7 @@ void child_handler(int num, int M, int N, int K, int (*matrix_one)[M][N],
                    SubTotal *sub_total)
 {
     int total, subtotal;
-printf("NUM IS %d\n", num);
+
     total = 0;
 
     //calc matrix C line
