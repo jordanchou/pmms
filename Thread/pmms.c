@@ -228,8 +228,7 @@ void read_matrix(char* filename, int rows, int cols, int **matrix)
             //Read the number from file
             if (fscanf(in_file, "%d", &(matrix)[ii][jj]) != 1)
             {
-                fprintf(stderr, "Error reading from file: '%s', please check
-                                the format of the file\n", filename);
+                fprintf(stderr, "Error reading from file: '%s', please check the format of the file\n", filename);
                 fclose(in_file);
                 exit(1);//If any occurs then end the program
             }
