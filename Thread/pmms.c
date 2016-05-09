@@ -60,7 +60,7 @@ int main(int argc, char **argv)
         //create the thread
 		pthread_create(&temp, NULL, child_handler, thread_args[ii]);
 	}
-printf("HI\n");
+
     free_array(M, 1, thread_args);
 
 	parent_handler();//Parent process goes into here
@@ -113,7 +113,10 @@ void *child_handler(void *args)
 
 	pthread_mutex_unlock(&mutex);//release the mutex lock
 	pthread_cond_broadcast(&full);//let other threads know that lock is avail.
+    printf("DWKDJW\n");
     pthread_detach(pthread_self());//Release all resources
+    printf("DWKDJW\n");
+
 	return NULL;
 }
 
