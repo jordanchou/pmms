@@ -78,8 +78,8 @@ be writing to a separate place.
 The required semaphores (mutex, sem\_full, and sem\_empty), buffer (subtotal) and
 matrices were implemented using shared memory.
 \\\\
-Zombie processes were handled by calling signal().
-
+Zombie processes were handled by calling signal(SIGCHLD, SIG\_IGN).
+\\
 \section{Thread PMMS}
 Mutual exclusion was achieved in the multi-threaded program by having the
 parent lock the mutex and wait until the is\_full condition was signalled
@@ -92,6 +92,9 @@ achieved using a broadcast which unblocks all the waiting threads.
 Whereas the process PMMS used shared memory the thread PMMS used global
 variables as threads can share data declared as global in the parent. The data
 declared as global were the required semaphores, subtotal and matrices.
+\\\\
+Threads were terminated by calling pthread\_detach(pthread\_self()) which
+releases the resources held by the thread.
 
 \section{Testing}
 

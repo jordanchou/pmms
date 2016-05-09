@@ -60,7 +60,7 @@ int main(int argc, char **argv)
         //create the thread
 		pthread_create(&temp, NULL, child_handler, thread_args[ii]);
 	}
-
+printf("HI\n");
     free_array(M, 1, thread_args);
 
 	parent_handler();//Parent process goes into here
