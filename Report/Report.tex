@@ -67,15 +67,18 @@ process (consumer) waiting until the buffer (in this case the subtotal data stru
 had an item in it (indicated by the sem\_full semaphore) to acquire the mutex lock.
 The child processes (producers) would wait until the buffer was empty (indicated
 by sem\_empty semaphore) to then acquire the lock. Therefore achieving mutual
-exclusion between the processes.
+exclusion between the processes as no process can access the critical section
+while another was in it because of the locks.
 \\\\
 Access to the matrices did not require any mututal exclusion as child processes
 will only be reading from matrix A and matrix B. Writing to matrix C only
 involved writing to each child processes’ row therefore each child process will
-be writing to a separate place. No crtitical section
+be writing to a separate place.
 \\\\
 The required semaphores (mutex, sem\_full, and sem\_empty), buffer (subtotal) and
 matrices were implemented using shared memory.
+\\\\
+Zombie processes were handled by calling signal().
 
 \section{Thread PMMS}
 Mutual exclusion was achieved in the multi-threaded program by having the
@@ -84,7 +87,7 @@ parent lock the mutex and wait until the is\_full condition was signalled
 critical section the is\_full condition is set to false allowing the child
 threads to stop waiting. The parent releases the mutex and the children waiting
 on the full condition are signalled. In the children threads the signals are
-achieved using a broadcast.
+achieved using a broadcast which unblocks all the waiting threads.
 \\\\
 Whereas the process PMMS used shared memory the thread PMMS used global
 variables as threads can share data declared as global in the parent. The data

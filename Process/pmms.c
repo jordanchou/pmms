@@ -228,14 +228,15 @@ void child_handler(int num, int M, int N, int K, int (*matrix_one)[M][N],
     {
         subtotal = 0;
 
-        for (int jj = 0; jj<N; jj++)
+        for (int jj = 0; jj<N; jj++)//Multiply the matrices
         {
             subtotal = subtotal + (*matrix_one)[num][jj] * (*matrix_two)[jj][ii];
         }
-        (*matrix_three)[num][ii] = subtotal;
+
+        (*matrix_three)[num][ii] = subtotal;//Store the subtotal in cell
     }
 
-    //SHOULD BE LOOPING HERE TO CALCULATE THE TOTAL
+    //Loop through the row to calculate the total for the row
     for (int ii = 0; ii < K; ii++)
     {
         total = total + (*matrix_three)[num][ii];
@@ -304,7 +305,8 @@ void parent_handler(int M, int N, int K, int (*matrix_three)[M][K], sem_t *semap
  * @param semaphores     array of semaphores
  * @param sub_total      data structure that held results and PID's
  */
-void cleanup(int M, int N, int K, int (*matrix_one)[M][N], int (*matrix_two)[N][K], int (*matrix_three)[M][K],
+void cleanup(int M, int N, int K, int (*matrix_one)[M][N],
+             int (*matrix_two)[N][K], int (*matrix_three)[M][K],
              int shm_matrix_one, int shm_matrix_two, int shm_matrix_three,
              int shm_sub_total, int shm_semaphores,
              sem_t *semaphores, SubTotal *sub_total)

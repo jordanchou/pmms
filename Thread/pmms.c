@@ -7,11 +7,12 @@ PURPOSE: Multiplies 2 matrices and outputs the sum
 REFERENCE:-
 COMMENTS:-
 REQUIRES:-
-Last Mod: 06-05-2016
+Last Mod: 08-05-2016
 */
 
 #include "pmms.h"
 
+//Have to keep them as global variables in order to share between threads
 static pthread_mutex_t mutex;//mutex variable
 static pthread_cond_t full;//condition variable for subtotal full/empty
 int M, N, K;//matrix dimensions
@@ -184,10 +185,10 @@ void free_array(int rows, int cols, int **matrix)
 }
 
 /**
- * [initialise_array description]
- * @param matrix [description]
- * @param rows   [description]
- * @param cols   [description]
+ * Initialises a 2D array given the rows and columns (dimensions)
+ * @param matrix A triple pointer (pointer to 2D array)
+ * @param rows   Number of rows
+ * @param cols   Number of columns
  */
 void initialise_array(int ***matrix, int rows, int cols)
 {
