@@ -36,7 +36,6 @@ int main(int argc, char **argv)
 	initialise_array(&matrix_a, M, N);//Initialise and allocate memory for
 	initialise_array(&matrix_b, N, K);// all the matrices
 	initialise_array(&matrix_c, M, K);
-
 	initialise_array(&thread_args, M, 1);//Initialise and allocate memory for
                                         // argument array
 
@@ -61,11 +60,11 @@ int main(int argc, char **argv)
 		pthread_create(&temp, NULL, child_handler, thread_args[ii]);
 	}
 
-    free_array(M, 1, thread_args);
+
 
 	parent_handler();//Parent process goes into here
 	cleanup();//Clean up memory and variables
-
+    free_array(M, 1, thread_args);
 
 
 }
@@ -113,9 +112,7 @@ void *child_handler(void *args)
 
 	pthread_mutex_unlock(&mutex);//release the mutex lock
 	pthread_cond_broadcast(&full);//let other threads know that lock is avail.
-    printf("DWKDJW\n");
     pthread_detach(pthread_self());//Release all resources
-    printf("DWKDJW\n");
 
 	return NULL;
 }
