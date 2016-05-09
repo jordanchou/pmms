@@ -61,6 +61,8 @@ int main(int argc, char **argv)
 		pthread_create(&temp, NULL, child_handler, thread_args[ii]);
 	}
 
+    free_array(thread_args);
+
 	parent_handler();//Parent process goes into here
 	cleanup();//Clean up memory and variables
 
@@ -166,7 +168,6 @@ void cleanup()
 	free_array(M, N, matrix_a);
 	free_array(N, K, matrix_b);
 	free_array(M, K, matrix_c);
-    free_array(M, 1, thread_args);
 }
 
 /**
