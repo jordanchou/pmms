@@ -113,7 +113,7 @@ void *child_handler(void *args)
 
 	pthread_mutex_unlock(&mutex);//release the mutex lock
 	pthread_cond_broadcast(&full);//let other threads know that lock is avail.
-
+    pthread_detach(pthread_self());//Release all resources
 	return NULL;
 }
 
