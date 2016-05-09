@@ -166,6 +166,7 @@ void cleanup()
 	free_array(M, N, matrix_a);
 	free_array(N, K, matrix_b);
 	free_array(M, K, matrix_c);
+    free_array(M, 1, thread_args);
 }
 
 /**
